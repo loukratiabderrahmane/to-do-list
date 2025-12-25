@@ -21,3 +21,8 @@ A simple and clean **To-Do List web application** that helps users manage their 
 ---
 
 ## 📂 Project Structure
+to-do-list/
+│── README.md     # Project documentation
+│── index.html    # Main HTML file
+│── styles.css    # Styling (CSS)
+└── main.js       # JavaScript logic
