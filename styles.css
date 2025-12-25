@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=BBH+Hegarty&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+    /* border: solid red 1px; */
+}
+body{
+    height: 100vh;
+    font-size: 20px;
+    font-family: "Anton", sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background: #005461;
+}
+
+.sous-container{
+    width: 60%;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.title{
+    background: #00B7B5;
+    display: flex;
+    padding: 5px;
+}
+.title p{
+    width: fit-content;
+    margin: auto;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+}
+.title #add{
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    color:#00B7B5 ;
+    outline: none;
+}
+.tasks{
+    background: #ffffffe5;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.tasks > div{
+    background-color: #fff;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    border-bottom: solid 1px black;
+    transition: 0.5s;
+}
+.text{
+    font-family: sans-serif;
+    font-size:  15px;
+    width: 60%;
+}
+.btn{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.check {
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    background: rgb(0, 150, 30);
+}
+.check span{
+    color: white;
+
+    font-size: 30px;
+}
+.close{
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    background: rgb(118, 0, 101);
+}
+.close span{
+    color: white;
+    
+    font-size: 30px;
+}
+.delete {
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    background: rgb(114, 0, 0);
+}
+.delete span{
+    color: white;
+    font-size: 30px;
+    
+}
+.update {
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    background: rgba(0, 16, 197, 0.877);
+}
+.update span{
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+    
+}
+.text p{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.tasks > div:hover{
+    box-shadow: 0px 3px 18px rgba(97, 97, 97, 0.943);
+}
+
+.task.done {
+    background-color: rgb(158, 253, 160);
+    text-decoration: line-through;
+}
