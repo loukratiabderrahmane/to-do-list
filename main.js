@@ -74,16 +74,18 @@ add.addEventListener("click",function(){
     
     
     let taskName = prompt("Enter your task :")
-    let taskObject = {
-        "title" : taskName,
-        "date" : dateCreation,
-        "isDone" : false
-    }
-    tasks.push(taskObject)
-    
-    storetasks()
-    
+    if (taskName != null){
+        let taskObject = {
+            "title" : taskName,
+            "date" : dateCreation,
+            "isDone" : false
+        }
+        tasks.push(taskObject)
+        
+        storetasks()
     fillTasksOnThePage()
+    }
+    
 })
 
 // Delete and Update
@@ -149,4 +151,5 @@ tasksContainer.addEventListener("click",function(e){
         let taskstring = JSON.stringify(tasks)
         localStorage.setItem("tasks",taskstring)
     }
+
                       
